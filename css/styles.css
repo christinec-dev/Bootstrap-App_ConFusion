@@ -99,7 +99,7 @@ img {
 }
 
     .carousel-inner {
-    background: #1a237e;  
+    background: #512da8;  
     top: 0;
     margin-top: 40px;
     margin-bottom: 50px;
@@ -205,3 +205,18 @@ img {
     color: black !important;
 }
 
+.modal-dialog {
+    background-color: white;
+}
+
+.btn-close {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;    
+    z-index: 1;
+   padding: 17px;
+}
+
+.form-group {
+    width: 100%;
+}

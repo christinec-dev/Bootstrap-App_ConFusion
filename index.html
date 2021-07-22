@@ -15,14 +15,14 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
-
+   
     </head>
 
 <body>
 
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand mr-auto" href="#"> <img class="img-fluid" src="./img/logo.png" height="30" width="41"></a>
@@ -47,7 +47,7 @@
                 <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-    <!--Task 3 : Reserve Table Button Insertion & Link To Form ----------------------------------------------------------------------------------------------------------------->
+    <!--Task 3 : Reserve Table Button Insertion & Link To Form ----------------------------------------------------->
                 <!-- Button Occupies remaining 6 blocks ------------------------------------------------------------------>
                 <div class="col-12 col-sm-3 align-self-center">
                     <!-- Linked to form with #reserve ID. Button will also go full size upon device size alterations ----------------->
@@ -58,6 +58,62 @@
     </header>
 
     <div class="container">
+
+        <!-- Carousel Start ------------------------------------------------------------------>
+        <div class="row row-content">
+            <!--Carousel Indicators------------------------------------------------------------------>
+            <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <!-- Carousel Content ------------------------------------------------------------------>
+                <div class="carousel-inner">
+                  <div class="carousel-item item active">
+                    <img src="img/uthappizza.png" class="d-block w-100" alt="uthappizza">
+                    <div class="carousel-caption">
+                        <h2 class="mt-0">Uthappizza 
+                            <span class="badge badge-danger">HOT</span>
+                            <span class="badge badge-pill badge-secondary">$4.99</span>
+                        </h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item item"> 
+                    <img src="img/buffet.png" class="d-block w-100" alt="buffet">
+                    <div class="carousel-caption">
+                        <h2>Weekend Grand Buffet
+                            <span class="badge badge-danger">NEW</span>
+                        </h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                      </div>
+                  </div>
+                  <div class="carousel-item item">
+                    <img src="img/alberto.png" class="d-block w-100" alt="alberto">
+                    <div class="carousel-caption">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                      </div>
+                  </div>
+                </div>
+                <!-- Next and Prev Buttons ------------------------------------------------------------------>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!-- Pause and Play Button ------------------------------------------------------------------>
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                	    <span class="fa fa-pause"></span>
+              </div>
+        </div>
+        <!-- Carousel End  ------------------------------------------------------------------>
+
         <div class="row row-content">
             <div class="col-12 col-sm-4 order-sm-last col-md-3 align-items-center">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -241,12 +297,40 @@
         </div>
     </footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+       <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <!-- JQuery Script For Carousel -------------------------------------------->
+    <script>
+        //Initialises a function when document loads
+        $(document).ready(function() {
+            //Sets the carousel interval for slide transition @2000 ms
+            $('#mycarousel').carousel({interval : 2000});
+            
+            $('#carouselButton').click(function(){
+                if($('#carouselButton').children('span').hasClass('fa-pause')) {
+                   //when the pause button is clicked, the carousel will stop 
+                    $('#mycarousel').carousel('pause');
+                    //and the pause icon will be replaced with a play icon
+                    $('#carouselButton').children('span').removeClass('fa-pause');
+                    $('#carouselButton').children('span').addClass('fa-play');
+                }
+                else  if($('#carouselButton').children('span').hasClass('fa-play')) {
+                     //when the play button is clicked, the carousel will resume 
+                    $('#mycarousel').carousel('cycle');
+                    //and the play icon will be replaced with a pause icon
+                    $('#carouselButton').children('span').removeClass('fa-play');
+                    $('#carouselButton').children('span').addClass('fa-pause');
+                }
+            });
+           
+        });
+    </script>
+
+     
 </body>
 
 </html>

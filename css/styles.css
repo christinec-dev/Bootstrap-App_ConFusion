@@ -1,0 +1,94 @@
+
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: #512da8;
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 240px;
+}
+
+.footer {
+    background-color: #d1c4e9;
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+}
+
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background-color: #9575cd;  
+    color: floralwhite;
+}
+
+.address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+h3 {
+    padding: none;
+    margin: 0px auto;
+
+}
+
+.media {
+    display: flex; 
+}
+
+img {
+    margin-right: 10px; 
+}
+
+.img-fluid {
+    display: flex; 
+}
+
+.badge-danger {
+    background-color: rgb(211, 35, 35);
+}
+
+.badge-pill {
+    background-color: rgb(102, 98, 98);
+}
+
+.active {
+    font-weight: bold !important;
+    color: #ffff !important;
+}
+
+.bg-warning {
+    width: 100%;
+}
+
+.btn-sm a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-sm {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+.media {
+    margin-top: 30px;
+}
+

@@ -1,222 +1,220 @@
-
-body{
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
-}
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
 
 .navbar-dark {
-    background-color: #512da8;
-}
+  background-color: #512da8; }
 
 .row-header {
-    margin: 0px auto;
-    padding: 0px auto;
-}
+  margin: 0px auto;
+  padding: 0px auto; }
 
 .row-content {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
-header
-.row-content {
-    margin: 0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 240px;
-}
+header .row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 240px; }
 
 .footer {
-    background-color: #d1c4e9;
-    margin: 0px auto;
-    padding: 50px 0px 50px 0px;
-}
+  background-color: #d1c4e9;
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px; }
 
 .jumbotron {
-    padding: 70px 30px 70px 30px;
-    margin: 0px auto;
-    background-color: #9575cd;  
-    color: floralwhite;
-}
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background-color: #9575cd;
+  color: floralwhite; }
 
 .address {
-    font-size: 80%;
-    margin: 0px;
-    color: #0f0f0f;
-}
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f; }
 
 h3 {
-    padding: none;
-    margin: 0px auto;
-
-}
+  padding: none; }
 
 .media {
-    display: flex; 
-}
+  display: flex;
+  margin-top: 30px; }
 
 img {
-    margin-right: 10px; 
-}
+  margin-right: 10px; }
 
 .img-fluid {
-    display: flex; 
-}
+  display: flex; }
 
 .badge-danger {
-    background-color: rgb(211, 35, 35);
-}
+  background-color: #d32323; }
 
 .badge-pill {
-    background-color: rgb(102, 98, 98);
-}
+  background-color: #666262; }
 
 .active {
-    font-weight: bold !important;
-    color: #ffff !important;
-}
+  font-weight: bold !important;
+  color: #ffff !important; }
 
 .bg-warning {
-    width: 100%;
-}
+  width: 100%; }
 
-.btn-sm a {
+.btn-sm {
+  font-size: 15px;
+  padding: 10px; }
+  .btn-sm a {
     text-decoration: none;
     color: black;
-    padding: 10px;
-}
+    padding: 10px; }
 
-@media only screen and (max-width: 600px) {
-    .btn-sm {
-        width: 100%;
-        margin-top: 20px;
-        padding: 10px;
-    }
-}
+.carousel-inner {
+  background: #512da8;
+  top: 0;
+  margin-top: 40px;
+  margin-bottom: 50px; }
 
-.media {
-    margin-top: 30px;
-}
-
-    .carousel-inner {
-    background: #512da8;  
-    top: 0;
-    margin-top: 40px;
-    margin-bottom: 50px;
-  }
-
-  .carousel .item {
-    height: 300px;
-  }
-
-.carousel .item img {
+.carousel .item {
+  height: 300px; }
+  .carousel .item img {
     min-height: 300px;
     max-width: 300px;
     position: absolute;
-    top: 0;
-  }
+    top: 0; }
 
-  #carouselButton {
-      right: 0px;
-      position: absolute;
-      bottom: 0px;    
-      z-index: 1;
-      margin-bottom: 50px;
-      margin-right: 12px;
-  }
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  margin-bottom: 50px;
+  margin-right: 12px; }
 
-  .carousel-caption h2 {
-      color: white;
-      font-weight: bold;
-      padding-bottom: 20px;
-      font-size: 40px;
-      text-shadow: 2px 2px rgba(0, 0, 0, 0.336);
-  }
+.carousel-caption h2 {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 40px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.336); }
 
-  .carousel-caption p {
-    color: white;
-    padding-bottom: 20px;
-    font-size: 20px;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.336);
-}
+.carousel-caption p {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.336); }
 
 .carousel-indicators {
-    padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  color: black !important; }
+  .tab-content p {
+    font-weight: normal !important;
+    color: black !important; }
+  .tab-content h3 {
+    font-weight: normal !important;
+    color: black !important; }
+
+.nav-tabs {
+  color: red !important;
+  color: black !important;
+  padding: 10px;
+  font-weight: normal !important; }
+  .nav-tabs .nav-item a {
+    color: black !important; }
+
+.modal-dialog {
+  background-color: white; }
+
+.btn-close {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  padding: 17px; }
+
+.form-group {
+  width: 100%; }
+
+.card {
+  background-color: #512da8;
+  border-radius: 0;
+  border: none; }
+  .card h3 {
+    text-align: left;
+    border-radius: 0;
+    border: none;
+    padding: 12px;
+    color: floralwhite; }
+
+.modal-content {
+  background-color: #512da8;
+  color: floralwhite;
+  width: 100%;
+  border-radius: 0; }
+
+.modal-body {
+  background-color: #d1c4e9; }
+  .modal-body .form-group .row {
+    padding: 5px; }
+
+input {
+  margin-bottom: 10px; }
+
+.form-check {
+  color: black;
+  font-weight: 500; }
 
 @media only screen and (max-width: 600px) {
-   
+  .btn-sm {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px; }
   .carousel-caption h2 {
     color: white;
     font-weight: bold;
-    font-size: 30px;
-}
-
-.carousel .item {
-    height: 200px;
-  }
-
-.carousel .item img {
-    min-height: 200px;
-    max-width: 200px;
-    position: absolute;
-    top: 0;
-  }
-  
+    font-size: 30px; }
+  .carousel .item {
+    height: 200px; }
+    .carousel .item img {
+      min-height: 200px;
+      max-width: 200px;
+      position: absolute;
+      top: 0; }
   #carouselButton {
     right: 0px;
     position: absolute;
-    bottom: 0px;    
+    bottom: 0px;
     z-index: 1;
     width: 40px;
     height: 40px;
     margin-bottom: 50px;
-    margin-right: 12px;
+    margin-right: 12px; } }
+
+.modal-body {
+    background-color: #d1c4e9;
 }
 
-}
-
-.tab-content {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+.btn-sm {
+    font-size: 15px;
     padding: 10px;
-    color: black !important;
-}
-
-.tab-content p {
-    font-weight: normal !important;
-    color: black !important;
-}
-
-.tab-content h3 {
-    font-weight: normal !important;
-    color: black !important;
-}
-
-.nav-tabs {
-    color: red !important;
-    color: black !important;
-    padding: 10px;
-    font-weight: normal !important;
-}
-
-.nav-tabs .nav-item a{
-    color: black !important;
-}
-
-.modal-dialog {
-    background-color: white;
 }
 
 .btn-close {
-    right: 0px;
-    position: absolute;
-    bottom: 0px;    
-    z-index: 1;
-   padding: 17px;
+   color: floralwhite;
 }
 
-.form-group {
-    width: 100%;
+input
+{
+    margin-bottom: 10px;
+}
+
+.form-check {
+    color: black;
+    font-weight: 500;
 }

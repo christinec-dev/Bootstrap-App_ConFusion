@@ -35,129 +35,15 @@
                 </ul>
             </div>
             <!-- Modal Trigger -------------------------------------------->
-            <span class="navbar-text">
-                <a data-bs-toggle="modal" data-bs-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login
+            <span class="navbar-text " >
+                <!-- Task 1 : Data-* Attribute Removed from Login Link --------------------------------->
+                <a id="loginLink" >
+                    <span class="fa fa-sign-in" ></span> Login
                 </a>
+                <!-- Task 3 : loginLink ID has been added to the login link to enable modal trigger ---->
             </span>
         </div>
     </nav>
-
-   <!--Task 1: Reserve Table Modal When Clicking on Reservation Button ---------------------------------->
-        <!-- Reservation Modal -------------------------------------------------------------------------->
-        <div id="reserveModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg" role="content">
-                <!-- Modal Information ------------------------------------------------------------------>    
-                <div class="modal-content">
-                    <div class="card">   
-                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                    <!-- Button to close modal when clicked -------------------------------------------->
-                    <button type="button" class="btn btn-close" data-bs-dismiss="modal">
-                    </button>
-                    </div>
-                    <!-- Modal Input ------------------------------------------------------------------>  
-                    <div class="modal-body">
-                         <div class="col-12">
-                            <div class="col-sm">
-                                        <form>
-                                            <div class="form-group row">
-                                                <div class="card-body">
-                                                    <div class="form-group row">
-                                                        <!-- Number of Guests Form Input ------------------------------------>
-                                                        <dt class="col-lg-6 col-md-6 col-sm-6 col-12"> Number of Guests</dt>
-                                                        <dd class="col-lg-6 col-md-6 col-sm-6 col-12"> 
-                                                            <!-- One Guest Radio Button ------------------------------------->
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                                <label class="form-check-label" for="flexRadioDefault2"> 1 </label>
-                                                            </div>
-
-                                                            <!-- Two Guests Radio Button ------------------------------------->
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                                <label class="form-check-label" for="flexRadioDefault2"> 2 </label>
-                                                            </div>
-
-                                                            <!-- Three Guests Radio Button ------------------------------------->
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                                <label class="form-check-label" for="flexRadioDefault2"> 3 </label>
-                                                            </div>
-
-                                                            <!-- Four Guests Radio Button ------------------------------------->
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                                <label class="form-check-label" for="flexRadioDefault2"> 4 </label>
-                                                            </div>
-
-                                                            <!-- Five Guests Radio Button ------------------------------------->
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                                <label class="form-check-label" for="flexRadioDefault2"> 5 </label>
-                                                            </div>
-                                                            <!-- Six Guests Radio Button ------------------------------------->
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                                <label class="form-check-label" for="flexRadioDefault2"> 6 </label>
-                                                            </div>
-                                                        </dd>
-                                                </div>
-                                                
-                                                <!--Task 2 :Section Addition With radio Button Non-Smoking Checked By Default ---------------------------------->
-                                                <!-- Smoking/Non-Smoking ------------------------------------------->
-                                                <div class="form-group row">
-                                                      <!-- Smoking/Non-Smoking Section Label ------------------------------------------->
-                                                    <dt class="col-lg-6 col-md-6 col-sm-6 col-12"> Section  </dt>
-                                                        <dd class="col-12 col-lg-6">  
-                                                            <div class="form-group row">
-                                                                <!-- Smoking Radio Button ------------------------------------------->
-                                                                <div class="col-12 col-md-6">
-                                                                    <input type="radio" class="btn-check" name="options" id="non-smoking" autocomplete="off" checked>
-                                                                    <label class="btn btn-success" for="non-smoking">Non-Smoking</label>
-                                                                </div>
-                                                                
-                                                                <!-- Non Smoking Radio Button ------------------------------------------->
-                                                                <div class="col-12 col-md-6">
-                                                                <input type="radio" class="btn-check" name="options" id="smoking" autocomplete="off">
-                                                                <label class="btn btn-danger" for="smoking">Smoking</label>
-                                                                </div>
-                                                            </div>
-                                                        </dd>
-                                                    </div>
-
-                                                    <!-- Date & Time Form Input ------------------------------------------->
-                                                    <div class="form-group row">
-                                                        <dt class="col-lg-6 col-md-6 col-sm-8 col-12"> Date and Time </dt>
-                                                        <dd class="col-12 col-lg-6">  
-                                                            <div class="form-group row">
-                                                                    <div class="col-12 col-md-6">
-                                                                        <!-- Appropriate Type Would Be Date, But Working from Example ----->
-                                                                        <input type="text" class="form-control" id="date" placeholder="Date">
-                                                                    </div>
-                                                                    <div class="col-12 col-md-6">
-                                                                        <!-- Appropriate Type Would Be Time, But Working from Example ------>
-                                                                        <input type="text" class="form-control" id="time" placeholder="Time">
-                                                                    </div>
-                                                            </div>
-                                                        </dd>
-                                                    </div>
-                                                <!-- Reserve Button ------------------------------------------------------------------------>
-                                                <div class="form-group row">
-                                                    <div class="offset-md-2 col-md-10">
-                                                        <!-- Button to reserver/cancel table reservation   --------------------------------->
-                                                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-bs-dismiss="modal">Cancel</button>
-                                                        <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button> 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
                            
     <header class="jumbotron">
         <div class="container">
@@ -171,8 +57,9 @@
                 </div>
                 <!-- Button Occupies remaining 6 blocks ------------------------------------------------------------------------>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <!-- Task 3 : Toolitip Removed Alongside Javascript Script ------------------------------------------------->                    
-                    <button type="button" class="btn btn-warning btn-sm"><a data-bs-toggle="modal" data-bs-target="#reserveModal"><strong>Reserve Table</strong></a></button>
+                <!-- Task 1 : Data-* Attribute Removed from Reserve Button ----------------------------------------------------->
+                <button type="button" class="btn btn-warning btn-sm" id="reserveButton"><a><strong>Reserve Table</strong></a></button>
+                <!-- Task 2 : reserveButton ID has been added to the reserve btn to enable modal trigger ----------------------->
                 </div>
             </div>
         </div>
@@ -294,6 +181,7 @@
                 </div>
             </div>
         </div>
+        </div>
 
     <footer class="footer">
         <div class="container">
@@ -338,28 +226,28 @@
     </footer>
 
      <!-- Login Modal -------------------------------------------------------------------------->
-     <div id="loginModal" class="modal fade" role="dialog">
+     <div id="loginModal" class="modal fade modal-log" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true" data-bs-keyboard="false">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal Information -------------------------------------------->    
             <div class="modal-content">
-                <h4 class="modal-title">Login</h4>
+                <div class="card">
+                <h3 class="modal-title">Login</h3>
                 <!-- Button to close modal when clicked -------------------------------------------->
-                <button type="button" class="btn btn-close" data-bs-dismiss="modal">
+                <button type="button" class="btn btn-close btn-close-white" data-bs-dismiss="modal">
                 </button>
-                </div>
-    
+            </div>
                 <div class="modal-body">
                     <form>
                         <div class="form-row">
-                            <div class="form-group col-sm-4">
+                            <div class="form-group">
                                     <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                    <input type="text" class="form-control form-control-sm mr-1" placeholder="Enter email">
                             </div>
-                            <div class="form-group col-sm-4">
+                            <div class="form-group">
                                 <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                                <input type="text" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
                             </div>
-                            <div class="col-sm-auto">
+                            <div class="form-group">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
                                     <label class="form-check-label"> Remember me
@@ -368,13 +256,131 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-bs-dismiss="modal">Cancel</button>
                             <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
                         </div>
                     </form>
                 </div>
+           </div>
             </div>
         </div>
+
+        
+   <!--Task 1: Reserve Table Modal When Clicking on Reservation Button ---------------------------------->
+        <!-- Reservation Modal -------------------------------------------------------------------------->
+        <div id="reserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal Information ------------------------------------------------------------------>    
+                <div class="modal-content">
+                    <div class="card">   
+                    <h3 class="card-header text-white">Reserve a Table</h3>
+                    <!-- Button to close modal when clicked -------------------------------------------->
+                    <button type="button" class="btn btn-close btn-close-white" data-bs-dismiss="modal">
+                    </button>
+                    </div>
+                    <!-- Modal Input ------------------------------------------------------------------>  
+                    <div class="modal-body">
+                         <div class="col-12">
+                            <div class="col-sm">
+                                        <form>
+                                            <div class="form-group row">
+                                                <div class="card-body">
+                                                    <div class="form-group row">
+                                                        <!-- Number of Guests Form Input ------------------------------------>
+                                                        <dt class="col-lg-6 col-md-6 col-sm-6 col-12"> Number of Guests</dt>
+                                                        <dd class="col-lg-6 col-md-6 col-sm-6 col-12"> 
+                                                            <!-- One Guest Radio Button ------------------------------------->
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                <label class="form-check-label" for="flexRadioDefault2"> 1 </label>
+                                                            </div>
+
+                                                            <!-- Two Guests Radio Button ------------------------------------->
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                <label class="form-check-label" for="flexRadioDefault2"> 2 </label>
+                                                            </div>
+
+                                                            <!-- Three Guests Radio Button ------------------------------------->
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                <label class="form-check-label" for="flexRadioDefault2"> 3 </label>
+                                                            </div>
+
+                                                            <!-- Four Guests Radio Button ------------------------------------->
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                <label class="form-check-label" for="flexRadioDefault2"> 4 </label>
+                                                            </div>
+
+                                                            <!-- Five Guests Radio Button ------------------------------------->
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                <label class="form-check-label" for="flexRadioDefault2"> 5 </label>
+                                                            </div>
+                                                            <!-- Six Guests Radio Button ------------------------------------->
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                <label class="form-check-label" for="flexRadioDefault2"> 6 </label>
+                                                            </div>
+                                                        </dd>
+                                                </div>
+                                                
+                                                <!--Task 2 :Section Addition With radio Button Non-Smoking Checked By Default ---------------------------------->
+                                                <!-- Smoking/Non-Smoking ------------------------------------------->
+                                                <div class="form-group row">
+                                                      <!-- Smoking/Non-Smoking Section Label ------------------------------------------->
+                                                    <dt class="col-lg-6 col-md-6 col-sm-6 col-12"> Section  </dt>
+                                                        <dd class="col-12 col-lg-6">  
+                                                            <div class="form-group row special">
+                                                                <!-- Smoking Radio Button ------------------------------------------->
+                                                                <div class="col-12 col-md-6">
+                                                                    <input type="radio" class="btn-check" name="options" id="non-smoking" autocomplete="off" checked>
+                                                                    <label class="btn btn-success" for="non-smoking">Non-Smoking</label>
+                                                                </div>
+                                                                
+                                                                <!-- Non Smoking Radio Button ------------------------------------------->
+                                                                <div class="col-12 col-md-6">
+                                                                <input type="radio" class="btn-check" name="options" id="smoking" autocomplete="off">
+                                                                <label class="btn btn-danger" for="smoking">Smoking</label>
+                                                                </div>
+                                                            </div>
+                                                        </dd>
+                                                    </div>
+
+                                                    <!-- Date & Time Form Input ------------------------------------------->
+                                                    <div class="form-group row">
+                                                        <dt class="col-lg-6 col-md-6 col-sm-8 col-12"> Date and Time </dt>
+                                                        <dd class="col-12 col-lg-6">  
+                                                            <div class="form-group row">
+                                                                    <div class="col-12 col-md-6">
+                                                                        <!-- Appropriate Type Would Be Date, But Working from Example ----->
+                                                                        <input type="text" class="form-control" id="date" placeholder="Date">
+                                                                    </div>
+                                                                    <div class="col-12 col-md-6">
+                                                                        <!-- Appropriate Type Would Be Time, But Working from Example ------>
+                                                                        <input type="text" class="form-control" id="time" placeholder="Time">
+                                                                    </div>
+                                                            </div>
+                                                        </dd>
+                                                    </div>
+                                                <!-- Reserve Button ------------------------------------------------------------------------>
+                                                <div class="form-group row">
+                                                    <div class="offset-md-2 col-md-10">
+                                                        <!-- Button to reserver/cancel table reservation   --------------------------------->
+                                                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -404,10 +410,34 @@
                     $('#carouselButton').children('span').removeClass('fa-play');
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
-            });
-           
+            });  
         });
     </script>
+
+    <!-- Task 2 : Javascript Script for Reserve Modal -------------------------------------------->
+    <script>
+    //Initialises a function when document loads
+    $(document).ready(function(){
+        //When the reserve button is clicked
+        $('#reserveButton').click(function(){
+            //The reserve modal will be shown
+            $('#reserveModal').modal('show')
+        });
+    });
+    </script>
+
+    <!-- Task 3 : Javascript Script for Login Modal -------------------------------------------->
+    <script>
+    //Initialises a function when document loads
+    $(document).ready(function(){
+        //When the login link is clicked
+        $('#loginLink').click(function(){
+            //the login modal will be shown
+            $('#loginModal').modal('show')
+        });
+    });
+    </script>
+
      
 </body>
 

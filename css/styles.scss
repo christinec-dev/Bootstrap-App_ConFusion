@@ -1,0 +1,232 @@
+$bg-dark: #512da8;
+$bg-light: #9575cd;
+$bg-pale: #d1c4e9;
+$bg-white: floralwhite;
+
+body {
+	padding: 50px 0px 0px 0px;
+	z-index: 0;
+}
+.navbar-dark {
+	background-color: $bg-dark;
+}
+.row-header {
+	margin: 0px auto;
+	padding: 0px auto;
+}
+.row-content {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+header {
+	.row-content {
+		margin: 0px auto;
+		padding: 50px 0px 50px 0px;
+		border-bottom: 1px ridge;
+		min-height: 240px;
+	}
+}
+.footer {
+	background-color: $bg-pale;
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+}
+.jumbotron {
+	padding: 70px 30px 70px 30px;
+	margin: 0px auto;
+	background-color: $bg-light;
+	color: $bg-white;
+}
+.address {
+	font-size: 80%;
+	margin: 0px;
+	color: #0f0f0f;
+}
+h3 {
+	padding: none;
+}
+.media {
+	display: flex;
+	margin-top: 30px;
+}
+img {
+	margin-right: 10px;
+}
+.img-fluid {
+	display: flex;
+}
+.badge-danger {
+	background-color: rgb(211, 35, 35);
+}
+.badge-pill {
+	background-color: rgb(102, 98, 98);
+}
+.active {
+	font-weight: bold !important;
+	color: #ffff !important;
+}
+.bg-warning {
+	width: 100%;
+}
+.btn-sm {
+	a {
+		text-decoration: none;
+		color: black;
+		padding: 10px;
+	}
+	font-size: 15px;
+	padding: 10px;
+}
+.carousel-inner {
+	background: $bg-dark;
+	top: 0;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+.carousel {
+	.item {
+		height: 300px;
+		img {
+			min-height: 300px;
+			max-width: 300px;
+			position: absolute;
+			top: 0;
+		}
+	}
+}
+#carouselButton {
+	right: 0px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 1;
+	margin-bottom: 50px;
+	margin-right: 12px;
+}
+.carousel-caption {
+	h2 {
+		color: white;
+		font-weight: bold;
+		padding-bottom: 20px;
+		font-size: 40px;
+		text-shadow: 2px 2px rgba(0, 0, 0, 0.336);
+	}
+	p {
+		color: white;
+		padding-bottom: 20px;
+		font-size: 20px;
+		text-shadow: 2px 2px rgba(0, 0, 0, 0.336);
+	}
+}
+.carousel-indicators {
+	padding-bottom: 50px;
+}
+.tab-content {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+	color: black !important;
+	p {
+		font-weight: normal !important;
+		color: black !important;
+	}
+	h3 {
+		font-weight: normal !important;
+		color: black !important;
+	}
+}
+.nav-tabs {
+	color: red !important;
+	color: black !important;
+	padding: 10px;
+	font-weight: normal !important;
+	.nav-item {
+		a {
+			color: black !important;
+		}
+	}
+}
+.modal-dialog {
+	background-color: white;
+}
+.btn-close {
+	right: 0px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 1;
+	padding: 17px;
+}
+.form-group {
+	width: 100%;
+}
+.card {
+	background-color: $bg-dark;
+	border-radius: 0;
+	border: none;
+	h3 {
+		text-align: left;
+		border-radius: 0;
+		border: none;
+		padding: 12px;
+		color: $bg-white;
+	}
+}
+.modal-content {
+	background-color: $bg-dark !important;
+	width: 100%;
+	border-radius: 0;
+}
+.modal-body {
+	.form-group {
+		.row {
+			padding: 5px;
+		}
+	}
+	background-color: $bg-pale;
+}
+input {
+	margin-bottom: 10px;
+}
+.form-check {
+	color: black;
+	font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+	.btn-sm {
+		width: 100%;
+		margin-top: 20px;
+		padding: 10px;
+	}
+	.carousel-caption {
+		h2 {
+			color: white;
+			font-weight: bold;
+			font-size: 30px;
+		}
+	}
+	.carousel {
+		.item {
+			height: 200px;
+			img {
+				min-height: 200px;
+				max-width: 200px;
+				position: absolute;
+				top: 0;
+			}
+		}
+	}
+	#carouselButton {
+		right: 0px;
+		position: absolute;
+		bottom: 0px;
+		z-index: 1;
+		width: 40px;
+		height: 40px;
+		margin-bottom: 50px;
+		margin-right: 12px;
+	}
+}
+
+.btn-close {
+    color: $bg-white;
+ }
